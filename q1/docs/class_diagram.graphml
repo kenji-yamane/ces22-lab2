@@ -45,7 +45,11 @@
 				</yjs:PolylineEdgeStyle.sourceArrow>
 			</yjs:PolylineEdgeStyle>
 			<yjs:Stroke x:Key="5" fill="#FF000000"/>
-			<yjs:PolylineEdgeStyle x:Key="6" stroke="#FF000000"/>
+			<yjs:PolylineEdgeStyle x:Key="6" stroke="{y:GraphMLReference 5}">
+				<yjs:PolylineEdgeStyle.sourceArrow>
+					<yjs:Arrow type="TRIANGLE" stroke="{y:GraphMLReference 5}" fill="#FFFFFFFF"/>
+				</yjs:PolylineEdgeStyle.sourceArrow>
+			</yjs:PolylineEdgeStyle>
 		</y:SharedData>
 	</data>
 	<graph id="G" edgedefault="directed">
@@ -94,7 +98,7 @@
 		<node id="n1">
 			<data key="d0">3</data>
 			<data key="d5">
-				<y:RectD X="25.5" Y="-70" Width="125" Height="156"/>
+				<y:RectD X="25" Y="-70" Width="126" Height="156"/>
 			</data>
 			<data key="d7">
 				<uml:UMLNodeStyle fill="#FF4CAF50" highlightFill="#FFA3F1BB">
@@ -175,26 +179,10 @@
 					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.009090909090909094"/>
 				</data>
 			</port>
-			<port name="p1">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9929577464788732"/>
-				</data>
-			</port>
-			<port name="p2">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9929577464788732"/>
-				</data>
-			</port>
-			<port name="p3">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9929577464788732"/>
-				</data>
-			</port>
-			<port name="p4">
-				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9929577464788732"/>
-				</data>
-			</port>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
 			<port name="p5"/>
 			<port name="p6"/>
 		</node>
@@ -219,7 +207,11 @@
 					</uml:UMLNodeStyle.model>
 				</uml:UMLNodeStyle>
 			</data>
-			<port name="p0"/>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.009090909090909094"/>
+				</data>
+			</port>
 		</node>
 		<node id="n5">
 			<data key="d0">7</data>
@@ -242,7 +234,11 @@
 					</uml:UMLNodeStyle.model>
 				</uml:UMLNodeStyle>
 			</data>
-			<port name="p0"/>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.009090909090909094"/>
+				</data>
+			</port>
 		</node>
 		<node id="n6">
 			<data key="d0">8</data>
@@ -265,7 +261,11 @@
 					</uml:UMLNodeStyle.model>
 				</uml:UMLNodeStyle>
 			</data>
-			<port name="p0"/>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.009090909090909094"/>
+				</data>
+			</port>
 		</node>
 		<node id="n7">
 			<data key="d0">9</data>
@@ -288,7 +288,11 @@
 					</uml:UMLNodeStyle.model>
 				</uml:UMLNodeStyle>
 			</data>
-			<port name="p0"/>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.009090909090909094"/>
+				</data>
+			</port>
 		</node>
 		<node id="n8">
 			<data key="d0">10</data>
@@ -311,7 +315,11 @@
 					</uml:UMLNodeStyle.model>
 				</uml:UMLNodeStyle>
 			</data>
-			<port name="p0"/>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.009090909090909094"/>
+				</data>
+			</port>
 		</node>
 		<node id="n9">
 			<data key="d0">11</data>
@@ -334,7 +342,11 @@
 					</uml:UMLNodeStyle.model>
 				</uml:UMLNodeStyle>
 			</data>
-			<port name="p0"/>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.009090909090909094"/>
+				</data>
+			</port>
 		</node>
 		<edge id="e0" source="n1" target="n2" sourceport="p0" targetport="p0">
 			<data key="d12">
@@ -358,70 +370,66 @@
 				<y:GraphMLReference ResourceKey="4"/>
 			</data>
 		</edge>
-		<edge id="e2" source="n4" target="n3" sourceport="p0" targetport="p1">
+		<edge id="e2" source="n3" target="n4" sourceport="p1" targetport="p0">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="28,390"/>
-					<y:Bend Location="256.83333587646484,390"/>
-				</x:List>
-			</data>
-			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 5}">
-					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="{y:GraphMLReference 5}" fill="#FF000000"/>
-					</yjs:PolylineEdgeStyle.targetArrow>
-				</yjs:PolylineEdgeStyle>
-			</data>
-		</edge>
-		<edge id="e3" source="n5" target="n3" sourceport="p0" targetport="p2">
-			<data key="d12">
-				<x:List>
-					<y:Bend Location="211,390"/>
-					<y:Bend Location="256.83333587646484,390"/>
+					<y:Bend Location="256.83333587646484,376"/>
+					<y:Bend Location="28,376"/>
 				</x:List>
 			</data>
 			<data key="d13">
 				<y:GraphMLReference ResourceKey="6"/>
 			</data>
 		</edge>
-		<edge id="e4" source="n6" target="n3" sourceport="p0" targetport="p3">
+		<edge id="e3" source="n3" target="n5" sourceport="p2" targetport="p0">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="394,390"/>
-					<y:Bend Location="256.83333587646484,390"/>
+					<y:Bend Location="256.83333587646484,376"/>
+					<y:Bend Location="211,376"/>
 				</x:List>
 			</data>
 			<data key="d13">
 				<y:GraphMLReference ResourceKey="6"/>
 			</data>
 		</edge>
-		<edge id="e5" source="n7" target="n3" sourceport="p0" targetport="p4">
+		<edge id="e4" source="n3" target="n6" sourceport="p3" targetport="p0">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="577,390"/>
-					<y:Bend Location="256.83333587646484,390"/>
+					<y:Bend Location="256.83333587646484,376"/>
+					<y:Bend Location="394,376"/>
 				</x:List>
 			</data>
 			<data key="d13">
 				<y:GraphMLReference ResourceKey="6"/>
 			</data>
 		</edge>
-		<edge id="e6" source="n8" target="n3" sourceport="p0" targetport="p5">
+		<edge id="e5" source="n3" target="n7" sourceport="p4" targetport="p0">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="760,390"/>
-					<y:Bend Location="256.83333587646484,390"/>
+					<y:Bend Location="256.83333587646484,376"/>
+					<y:Bend Location="577,376"/>
 				</x:List>
 			</data>
 			<data key="d13">
 				<y:GraphMLReference ResourceKey="6"/>
 			</data>
 		</edge>
-		<edge id="e7" source="n9" target="n3" sourceport="p0" targetport="p6">
+		<edge id="e6" source="n3" target="n8" sourceport="p5" targetport="p0">
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="943,390"/>
-					<y:Bend Location="256.83333587646484,390"/>
+					<y:Bend Location="256.83333587646484,376"/>
+					<y:Bend Location="760,376"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="6"/>
+			</data>
+		</edge>
+		<edge id="e7" source="n3" target="n9" sourceport="p6" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="256.83333587646484,376"/>
+					<y:Bend Location="943,376"/>
 				</x:List>
 			</data>
 			<data key="d13">
